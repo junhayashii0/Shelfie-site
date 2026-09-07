@@ -1,0 +1,29 @@
+:root {
+  color-scheme: dark;
+  --ink: #f3dfb2;
+  --muted: #c3a574;
+  --gold: #d6a64b;
+  --panel: #24140c;
+  --line: #6b431f;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #3a2112 0, #160d08 42rem);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+  line-height: 1.8;
+}
+a { color: #efc876; }
+.doc { width: min(760px, calc(100% - 32px)); margin: 0 auto; padding: 52px 0 80px; }
+.brand { color: var(--gold); font-family: Georgia, "Yu Mincho", serif; letter-spacing: .08em; text-decoration: none; }
+h1, h2 { font-family: Georgia, "Yu Mincho", serif; font-weight: 600; }
+h1 { margin: 22px 0 6px; font-size: clamp(2rem, 7vw, 3.2rem); }
+h2 { margin-top: 38px; padding-bottom: 8px; border-bottom: 1px solid var(--line); font-size: 1.25rem; }
+.updated, .note { color: var(--muted); font-size: .9rem; }
+.lead, .card { padding: 20px; border: 1px solid var(--line); border-radius: 14px; background: rgba(36, 20, 12, .88); }
+.nav { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 28px; }
+ul { padding-left: 1.3rem; }
+footer { margin-top: 52px; color: var(--muted); font-size: .85rem; }
+
